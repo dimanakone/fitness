@@ -7,29 +7,33 @@
   <title>SUPERGYM</title>
   <meta name="description" content="Сайт омского спортивного клуба SUPERGYM.">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/alumnisans-normal-600.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumnisans-normal-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumnisans-normal-800.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensed-normal-300.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensed-normal-400.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensed-normal-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-800.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-700.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <div class="header__links-wrap">
-          <a class="logo header__logo" href="#">
-            <span class="visually-hidden">На главную.</span>
-            <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
-          </a>
-          <a class="header__link" href="tel:+78005555555">8-800-555-55-55</a>
-        </div>
+        <ul class="header__links">
+          <li class="header__link-item">
+            <a class="logo header__logo" href="#">
+              <span class="visually-hidden">На главную.</span>
+              <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
+            </a>
+          </li>
+          <li class="header__link-item">
+            <a class="header__link" href="tel:+78005555555">8-800-555-55-55</a>
+          </li>
+        </ul>
 
-        <section class="primery-unit header__primery-unit">
-          <p class="primery-unit__label">Омск</p>
-          <h2 class="primery-unit__heading">Фитнес центр</h2>
+        <div class="primery-unit header__primery-unit">
+          <p class="primery-unit__city">Омск</p>
+          <h2 class="primery-unit__title">Фитнес центр</h2>
           <ul class="primery-unit__features">
             <li class="primery-unit__feature">Тренажёрный зал</li>
             <li class="primery-unit__feature">Групповые занятия</li>
@@ -48,9 +52,173 @@
                 alt="Каким Вы можете стать благодаря нам." loading="lazy">
             </picture>
           </div>
-        </section>
+        </div>
       </div>
     </header>
+
+    <main>
+
+      <h1 class="visually-hidden">Фитнес-центр - SUPERGYM</h1>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__wrap">
+            <div class="about__content">
+              <h2>Тренажерный зал</h2>
+              <h3>Просторный зал площадью 900 кв/м</h3>
+              <p>
+                Supergym&nbsp;— самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+                и&nbsp;здоровья. Тренажерный
+                зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+              </p>
+              <p>
+                В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также
+                в&nbsp;фитнес центре есть
+                несколько оборудованных залов для различных видов групповых занятий.
+              </p>
+            </div>
+            <div class="about__picture-wrap">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="img/about-mobile.webp 1x, img/about-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/about.webp 1x, img/about@2x.webp 2x">
+                <img src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Каким выглядит один из наших залов."
+                  loading="lazy">
+              </picture>
+              <div class="about__video">
+                <div class="video">
+                  <!-- Контейнер для iframe с YouTube -->
+                  <button class="video__button" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscriptions" id="subscriptions">
+        <div class="container">
+          <h2>Абонементы</h2>
+          <div class="subscriptions__tabs tabs">
+            <nav class="tabs__nav">
+              <a class="tabs__btn no-js active" data-tab="#tab-01">1 месяц</a>
+              <a class="tabs__btn no-js" data-tab="#tab-02">6 месяцев</a>
+              <a class="tabs__btn no-js" data-tab="#tab-03">12 месяцев</a>
+            </nav>
+            <div class="tabs__body">
+              <ul class="tabs__list no-js active" id="tab-01">
+                <li class="tabs__item">
+                  <div>
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <span class="tabs__price" data-price="5000">
+                      5000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__item">
+                  <div>
+                    <h3>Дневной</h3>
+                    <p>С 8:00 до 17:00</p>
+                    <span class="tabs__price" data-price="1700">
+                      1700
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__item">
+                  <div>
+                    <h3>Полный день</h3>
+                    <p>С 8:00 до 22:00</p>
+                    <span class="tabs__price" data-price="2700">
+                      2700
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabs__list no-js" id="tab-02">
+                <li class="tabs__item">
+                  <div>
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <span class="tabs__price" data-price="29000">
+                      29000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__item">
+                  <div>
+                    <h3>Дневной</h3>
+                    <p>С 8:00 до 17:00</p>
+                    <span class="tabs__price" data-price="10000">
+                      10000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__item">
+                  <div>
+                    <h3>Полный день</h3>
+                    <p>С 8:00 до 22:00</p>
+                    <span class="tabs__price" data-price="15000">
+                      15000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabs__list no-js" id="tab-03">
+                <li class="tabs__item">
+                  <div>
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <span class="tabs__price" data-price="57000">
+                      57000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__item">
+                  <div>
+                    <h3>Дневной</h3>
+                    <p>С 8:00 до 17:00</p>
+                    <span class="tabs__price" data-price="19000">
+                      19000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__item">
+                  <div>
+                    <h3>Полный день</h3>
+                    <p>С 8:00 до 22:00</p>
+                    <span class="tabs__price" data-price="29000">
+                      29000
+                      <span>₽</span>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </div>
 
   <!-- Модалки -->

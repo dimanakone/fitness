@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {onTabClick} from './modules/tabs';
 import {Form} from './modules/form-validate/form';
 
 // ---------------------------------
@@ -8,11 +9,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules
   // ---------------------------------
+  onTabClick();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

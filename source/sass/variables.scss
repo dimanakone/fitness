@@ -34,8 +34,8 @@ $offset-fluid: calc(50% - 650px);
 
 // Typography
 $fz-default: 16px;
-$ff-roboto-condensed: "Roboto Condensed", "Arial", "sans-serif";
-$ff-alumni-sans: "Alumni Sans", "Arial", "sans-serif";
+$ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$ff-alumni-sans: "Alumni Sans", "Arial", sans-serif;
 $ff-rouble: "Rouble", "Arial", sans-serif;
 
 // Viewports
@@ -43,7 +43,7 @@ $ff-rouble: "Rouble", "Arial", sans-serif;
 
 $vp-320:                            320px;
 $vp-768:                            768px;
-$vp-1366:                           1366px;
+$vp-1200:                           1200px;
 
 // Animation
 // ---------------------------------

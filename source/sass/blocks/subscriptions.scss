@@ -1,0 +1,85 @@
+.subscriptions {
+  position: relative;
+  padding-top: 118px;
+  padding-bottom: 240px;
+
+  @include vp-1199 {
+    padding-top: 99px;
+    padding-bottom: 200px;
+  }
+
+  @include vp-767 {
+    padding-top: 69px;
+    padding-bottom: 140px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -183px;
+    bottom: -29px;
+    z-index: -1;
+    width: 470px;
+    height: 494px;
+
+    background-image: image-set(
+      url("../img/wheels.png") 1x,
+      url("../img/wheels@2x.png") 2x,
+      url("../img/wheels.webp") 1x,
+      url("../img/wheels@2x.webp") 2x
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include vp-1199 {
+      right: -73px;
+      bottom: -225px;
+      width: 420px;
+      height: 444px;
+    }
+
+    @include vp-767 {
+      content: none;
+    }
+  }
+}
+
+.subscriptions h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: $ff-alumni-sans;
+  font-size: 49px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 1.4px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 13px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
+    letter-spacing: 1.1px;
+  }
+}
+
+.subscriptions__tabs {
+  z-index: 2;
+  position: relative;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 143px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}

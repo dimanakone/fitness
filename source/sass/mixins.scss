@@ -36,10 +36,20 @@
   }
 }
 
+@mixin conic-gradient($from, $at) {
+  background: conic-gradient(
+    from $from at $at,
+    $color-venetian-red -46.69deg,
+    $color-dark-cerulean 32.24deg,
+    $color-venetian-red 313.31deg,
+    $color-dark-cerulean 392.24deg
+  );
+}
+
 // Desktop first
 
-@mixin vp-1365 {
-  @media (max-width: ($vp-1366 - 1px)) {
+@mixin vp-1199 {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }

@@ -1,0 +1,5 @@
+.logo {
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
