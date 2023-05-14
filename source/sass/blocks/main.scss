@@ -1,0 +1,8 @@
+.main__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,101 @@
+.form {
+  color: $color-default-white;
+  background-color: $color-sapphire;
+}
+
+.form__wrap {
+  padding: 55px 103px 54px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 84px;
+    font-family: $ff-alumni-sans;
+    letter-spacing: 0.03em;
+  }
+
+  @include vp-1199 {
+    padding: 61px 133px 69px;
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 64px 15px 69px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  gap: 30px;
+
+  input {
+    min-width: 190px;
+    padding: 10px 0 4px;
+    font-size: 14px;
+    line-height: 21px;
+    color: inherit;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+
+    &:hover,
+    &:focus {
+      background: rgba($color-default-black, 0.2);
+    }
+  }
+
+  span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @include vp-1199 {
+    grid-template-columns: 206px 206px;
+    gap: 30px 60px;
+
+    input {
+      min-width: 100%;
+    }
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+.form__button {
+  grid-column: 1/-1;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: inherit;
+
+  &:hover,
+  &:focus {
+    background: rgba($color-default-black, 0.2);
+  }
+
+  &:active {
+    background: rgba($color-default-black, 0.2);
+    border-color: transparent;
+  }
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+}

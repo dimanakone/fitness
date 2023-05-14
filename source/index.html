@@ -7,12 +7,15 @@
   <title>SUPERGYM</title>
   <meta name="description" content="Сайт омского спортивного клуба SUPERGYM.">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/alumnisans-600.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumnisans-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumnisans-800.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensed-300.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensed-400.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensed-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-semi-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 </head>
 
 <body>
@@ -43,12 +46,12 @@
           <div class="primery-unit__image">
             <picture>
               <source type="image/webp" media="(max-width: 320px)"
-                srcset="img/primery-unit-tablet.webp 1x, img/primery-unit-tablet@2x.webp 2x">
+                srcset="img/content/primery/primery-unit-tablet.webp 1x, img/content/primery/primery-unit-tablet@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/primery-unit-tablet.webp 1x, img/primery-unit-tablet@2x.webp 2x">
+                srcset="img/content/primery/primery-unit-tablet.webp 1x, img/content/primery/primery-unit-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/primery-unit.webp 1x, img/primery-unit@2x.webp 2x">
-              <img src="img/primery-unit.jpg" srcset="img/primery-unit@2x.jpg 2x"
+                srcset="img/content/primery/primery-unit.webp 1x, img/content/primery/primery-unit@2x.webp 2x">
+              <img src="img/content/primery/primery-unit.jpg" srcset="img/content/primery/primery-unit@2x.jpg 2x"
                 alt="Каким Вы можете стать благодаря нам." loading="lazy">
             </picture>
           </div>
@@ -56,7 +59,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
 
       <h1 class="visually-hidden">Фитнес-центр - SUPERGYM</h1>
 
@@ -87,11 +90,27 @@
                 <img src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Каким выглядит один из наших залов."
                   loading="lazy">
               </picture>
-              <div class="about__video">
-                <div class="video">
-                  <!-- Контейнер для iframe с YouTube -->
-                  <button class="video__button" type="button"></button>
+              <div class="about__video video">
+                <div class="video__preview">
+                  <picture>
+                    <source media="(max-width: 767px)" type="image/webp"
+                      srcset="img/about-video-mobile.webp 1x, img/about-video-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/about-video.webp 1x, img/about-video@2x.webp 2x">
+
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/about-video-mobile.jpg 1x, img/about-video-mobile@2x.jpg 2x">
+                    <img src="img/about-video.jpg" srcset="img/about-video@2x.jpg 2x"
+                      alt="Превью видео с тренажёрным залом." width="364" height="228">
+                  </picture>
                 </div>
+                <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  loading="lazy" allowfullscreen>
+                </iframe>
+                <button class="video__play" type="button">
+                  <span class="visually-hidden">Включить видео</span>
+                </button>
+              </div>
               </div>
             </div>
           </div>
@@ -218,11 +237,339 @@
         </div>
       </section>
 
+      <section class="promo">
+        <div class="container">
+          <div class="promo__wrap">
+            <div class="promo__content">
+              <h2>SUPER GAMES</h2>
+              <dl>
+                <dt>Дата</dt>
+                <dd>7<span>Марта 2019</span></dd>
+                <dt>Время</dt>
+                <dd>12:00</dd>
+              </dl>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a href="#">заполнить заявку</a>
+            </div>
+            <div class="promo__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/content/competitons/competitions-mobile.webp 1x, img/content/competitons/competitions-mobile@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp"
+                  srcset="img/content/competitons/competitions-tablet.webp 1x, img/content/competitons/competitions-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/competitons/competitions.webp 1x, img/content/competitons/competitions@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/content/competitons/competitions-mobile.jpg 1x, img/content/competitons/competitions-mobile@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/content/competitons/competitions-tablet.jpg 1x, imgcontent/competitons/competitions-tablet@2x.jpg 2x">
+                <img src="img/content/competitons/competitions.jpg" srcset="img/content/competitons/competitions@2x.jpg 2x" alt="Соревнования по кросс-фиту." width="660" height="500">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="coaches">
+        <div class="container coaches__container">
+            <h2>Тренеры</h2>
+            <button class="coaches__button coaches__button--prev coaches__button--nojs" type="button"></button>
+            <div class="swiper coaches__swiper coaches__swiper--nojs">
+              <ul class="swiper-wrapper coaches__swiper-wrapper coaches__swiper-wrapper--nojs">
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-1.webp 1x, ./img/content/coaches/coach-1@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-1.jpg" alt="Фотография Анны Павловой." width="260" height="294" srcset="./img/content/coaches/coach-1@2x.jpg 2x">
+                  </picture>
+                  <p>Анна Павлова</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Алексей Лавров</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-2.webp 1x, ./img/content/coaches/coach-2@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-2.jpg" alt="Фотография Алексея Лаврова." width="260" height="294" srcset="./img/content/coaches/coach-2@2x.jpg 2x">
+                  </picture>
+                  <p>Алексей Лавров</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Александр Пашков</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-3.webp 1x, ./img/content/coaches/coach-3@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-3.jpg" alt="Фотография Александра Пашкова." width="258" height="292" srcset="./img/content/coaches/coach-3@2x.jpg 2x">
+                  </picture>
+                  <p>Александр Пашков</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Мария Кетова</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-4.webp 1x, ./img/content/coaches/coach-4@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-4.jpg" alt="Фотография Марии Кетовой." width="260" height="294" srcset="./img/content/coaches/coach-4@2x.jpg 2x">
+                  </picture>
+                  <p>Мария Кетова</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-1.webp 1x, ./img/content/coaches/coach-1@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-1.jpg" alt="Фотография Анны Павловой." width="260" height="294" srcset="./img/content/coaches/coach-1@2x.jpg 2x">
+                  </picture>
+                  <p>Анна Павлова</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Алексей Лавров</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-2.webp 1x, ./img/content/coaches/coach-2@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-2.jpg" alt="Фотография Алексея Лаврова." width="260" height="294" srcset="./img/content/coaches/coach-2@2x.jpg 2x">
+                  </picture>
+                  <p>Алексей Лавров</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Александр Пашков</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-3.webp 1x, ./img/content/coaches/coach-3@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-3.jpg" alt="Фотография Александра Пашкова." width="258" height="292" srcset="./img/content/coaches/coach-3@2x.jpg 2x">
+                  </picture>
+                  <p>Александр Пашков</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+                <li class="swiper-slide coaches__swiper-slide" tabindex="0">
+                  <h3>Мария Кетова</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/coaches/coach-4.webp 1x, ./img/content/coaches/coach-4@2x.webp 2x">
+                    <img class="coaches__swiper-image" src="./img/content/coaches/coach-4.jpg" alt="Фотография Марии Кетовой." width="260" height="294" srcset="./img/content/coaches/coach-4@2x.jpg 2x">
+                  </picture>
+                  <p>Мария Кетова</p>
+                  <span>CrossFit</span>
+                  <ul class="coaches__swiper-features">
+                    <li class="coaches__swiper-feature">Certified Level 3 Trainer</li>
+                    <li class="coaches__swiper-feature">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__swiper-feature">Опыт — 6 лет</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <button class="coaches__button coaches__button--next coaches__button--nojs" type="button"></button>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__wrap">
+            <h2>Наши преимущества</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--area">
+                <div class="advantages__number">
+                  <span>900</span>
+                  <span>кв/м</span>
+                </div>
+                <div class="advantages__content">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--parking">
+                <div class="advantages__number">
+                  <span>70</span>
+                  <span>машин</span>
+                </div>
+                <div class="advantages__content">
+                  <h3>Собственная парковка</h3>
+                  <p>Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке</p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--major">
+                <span>100</span>
+                <span>Тренажеров</span>
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
+              </li>
+              <li class="advantages__item advantages__item--comfort">
+                <div class="advantages__number">
+                  <span>350</span>
+                  <span>мест</span>
+                </div>
+                <div class="advantages__content">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--experience">
+                <div class="advantages__number">
+                  <span>5+</span>
+                  <span>лет</span>
+                </div>
+                <div class="advantages__content">
+                  <h3>Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="actions">
+        <div class="container">
+          <div class="actions__wrap">
+            <h2>Акции</h2>
+            <div class="actions__wrapper">
+              <div class="actions__major">
+                <div class="actions__content">
+                  <h3>Год<span class="actions__price">4999</span></h3>
+                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <a class="actions__link" href="#">Подробнее</a>
+                </div>
+                <div class="actions__picture">
+                  <picture>
+                    <source width="280" height="462" media="(min-width: 1200px)" type="image/webp" srcset="img/content/actions/action.webp 1x, img/content/actions/action@2x.webp 2x">
+                    <source width="399" height="462" media="(min-width: 768px)" type="image/webp" srcset="img/content/actions/action-tablet.webp 1x, img/content/actions/action-tablet@2x.webp 2x">
+                    <source width="290" height="299" type="image/webp" srcset="img/content/actions/action-mobile.webp 1x, img/content/actions/action-mobile@2x.webp 2x">
+                    <img loading="lazy" width="280" height="462" src="img/content/actions/action.jpg" srcset="img/content/actions/action@2x.jpg 2x" alt="Мария Кетова.">
+                  </picture>
+                </div>
+              </div>
+              <div class="actions__inner">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                <a class="actions__link actions__link--other" href="#">Подробнее</a>
+              </div>
+              <div class="actions__inner">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес  с&nbsp;командой</p>
+                <a class="actions__link actions__link--other" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrap">
+            <h2>Отзывы</h2>
+            <div class="swiper reviews__swiper reviews__swiper--nojs">
+              <div class="swiper-wrapper reviews__swiper-wrapper reviews__swiper-wrapper--nojs">
+                <div class="swiper-slide reviews__swiper-slide">
+                  <div class="reviews__swiper-inner">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="./img/content/reviews/review-desktop.webp 1x, ./img/content/reviews/review-desktop@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/content/reviews/review-mobile.webp 1x, ./img/content/reviews/review-mobile@2x.webp 2x">
+                      <img class="reviews__swiper-image" src="./img/content/reviews/review-desktop.png"
+                            alt="Фотография Анны Орловой." width="80" height="80" srcset="./img/content/reviews/review-desktop@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="reviews__content">
+                    <h3>Анна Орлова</h3>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__swiper-slide">
+                  <div class="reviews__swiper-inner">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="./img/content/reviews/review-desktop.webp 1x, ./img/content/reviews/review-desktop@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/content/reviews/review-mobile.webp 1x, ./img/content/reviews/review-mobile@2x.webp 2x">
+                      <img class="reviews__swiper-image" src="./img/content/reviews/review-desktop.png"
+                            alt="Фотография Мария Воробей." width="80" height="80"
+                            srcset="./img/content/reviews/review-desktop@2x.png 2x">
+                    </picture>
+                  </div>
+                  <div class="reviews__content">
+                    <h3>Мария Воробей</h3>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="reviews__button reviews__button--prev reviews__button--nojs" type="button"></button>
+            <button class="reviews__button reviews__button--next reviews__button--nojs" type="button"></button>
+          </div>
+        </div>
+      </section>
+
+      <div class="main__columns">
+        <section class="form">
+          <div class="form__wrap" data-form-validate data-callback="base">
+            <h2>Бесплатное занятие</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="form__wrapper">
+                <label data-validate-type="text" data-limitation="letters" data-required data-message-base="Поле обязательно к заполнению">
+                  <input type="text" name="name" id="name" placeholder="Имя" minlength="2" required>
+                </label>
+                <label data-validate-type="text" data-limitation="digit"  data-required data-message-base="Поле обязательно к заполнению">
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                </label>
+                <button class="form__button btn" type="submit">отправить</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrap">
+            <h2>Контакты</h2>
+            <div class="contacts__wrapper">
+              <dl class="contacts__list">
+                <dt>Адрес:</dt>
+                <dd>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</dd>
+                <dt>График работы:</dt>
+                <dd>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</dd>
+              </dl>
+              <dl class="contacts__list">
+                <dt>Телефон:</dt>
+                <dd>8-800-555-55-55</dd>
+                <dt>Email:</dt>
+                <dd>omsk@supergym.ru</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
+  <!-- <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -248,10 +595,9 @@
         </button>
       </div>
     </div>
-  </div>
-
-  <script src="js/vendor.min.js"></script>
+  </div> -->
   <script src="js/main.min.js"></script>
+  <script src="js/vendor.min.js"></script>
 </body>
 
 </html>
