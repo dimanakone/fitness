@@ -15,6 +15,11 @@
   padding: 54px 123px 66px;
   border-top: 1px solid $color-light-slate-grey;
 
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
   h2 {
     margin: 0 -3px 39px;
     font-weight: 600;
@@ -64,6 +69,10 @@
     &:not(:last-of-type) {
       margin-bottom: 19px;
     }
+  }
+
+  a {
+    color: inherit;
   }
 
   &:nth-of-type(2n) {

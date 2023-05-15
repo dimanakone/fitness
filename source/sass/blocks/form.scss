@@ -4,7 +4,11 @@
 }
 
 .form__wrap {
-  padding: 55px 0 54px 103px;
+  padding: 55px 170px 54px 103px;
+
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    padding-right: 100px;
+  }
 
   h2 {
     margin: 0;
@@ -39,11 +43,11 @@
 
 .form__wrapper {
   display: grid;
-  grid-template-columns: 190px 190px;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 
   input {
-    min-width: 190px;
+    width: 100%;
     padding: 10px 0 4px;
     font-size: 14px;
     line-height: 21px;
