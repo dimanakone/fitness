@@ -4,7 +4,7 @@
 }
 
 .form__wrap {
-  padding: 55px 103px 54px;
+  padding: 55px 0 54px 103px;
 
   h2 {
     margin: 0;
@@ -17,7 +17,7 @@
   }
 
   @include vp-1199 {
-    padding: 61px 133px 69px;
+    padding: 61px 133px 71px;
 
     h2 {
       margin-bottom: 25px;
@@ -28,7 +28,7 @@
   }
 
   @include vp-767 {
-    padding: 64px 15px 69px;
+    padding: 64px 15px 71px;
 
     h2 {
       font-size: 32px;

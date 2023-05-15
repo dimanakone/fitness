@@ -1,7 +1,7 @@
 .actions {
   min-height: 770px;
   margin: 0 auto;
-  padding: 149px 0 30px;
+  padding: 100px 0 30px;
 
   @include vp-1199 {
     min-height: 930px;
@@ -17,9 +17,6 @@
 .actions__wrap {
   display: flex;
   flex-direction: column;
-
-  @include vp-1199 {
-  }
 
   @include vp-767 {
     flex-direction: column;
@@ -90,7 +87,7 @@
   align-items: flex-start;
   max-width: 280px;
   height: 462px;
-  padding: 38px 45px 45px;
+  padding: 38px 45px 44px;
   color: $color-default-white;
   background-color: $color-torchred;
 
@@ -144,7 +141,7 @@
   flex-direction: column;
   align-items: flex-start;
   min-height: 211px;
-  padding: 18px 28px 28px;
+  padding: 18px 28px 27px;
   color: #1c3374;
   border: 7px solid;
   border-image-slice: 1;
@@ -174,8 +171,12 @@
   font-size: 16px;
   line-height: 22px;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding: 4px 0;
+  }
+
+  @include vp-767 {
+
     text-align: center;
   }
 }

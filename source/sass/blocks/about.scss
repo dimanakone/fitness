@@ -1,6 +1,15 @@
 .about {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 5px;
+
+  @include vp-1199 {
+    padding-top: 63px;
+    padding-bottom: 15px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+  }
 }
 
 .about__wrap {
@@ -10,20 +19,30 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 37px;
+  }
+
+  @include vp-767 {
+    gap: 26px;
   }
 }
 
 .about__content {
   padding-left: 60px;
-  padding-top: 49px;
+  padding-top: 39px;
 
   @include vp-1199 {
-    padding-left: 0;
+    padding-left: 89px;
+    margin-right: 89px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    margin: 0;
   }
 
   h2 {
-    margin: 0 0 25px;
+    margin: 0 0 7px;
     font-family: $ff-alumni-sans;
     font-weight: 600;
     font-size: 48px;
@@ -31,28 +50,60 @@
     letter-spacing: 0.03em;
 
     @include vp-1199 {
+      margin: 0 0 -1px -15px;
       font-size: 42px;
       line-height: 50px;
       text-align: center;
     }
+
+    @include vp-767 {
+      margin: 0 0 5px;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left;
+    }
   }
 
   h3 {
-    margin: 0 0 55px;
+    margin: 0 0 40px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
 
     @include vp-1199 {
+      margin: 0 0 33px;
       text-align: center;
+    }
+
+    @include vp-767 {
+      text-align: left;
+      margin-bottom: 24px;
     }
   }
 
   p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
     margin: 0 0 7px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @include vp-1199 {
+      &:nth-of-type(2n) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+      }
     }
   }
 }
@@ -67,6 +118,12 @@
       height: 345px;
       object-fit: cover;
       margin: 0 auto;
+    }
+
+    @include vp-767 {
+      width: auto;
+      height: auto;
+      margin-bottom: 40px;
     }
   }
 

@@ -1,6 +1,6 @@
 .advantages {
-  padding-top: 146px;
-  padding-bottom: 87px;
+  padding-top: 96px;
+  padding-bottom: 136px;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
@@ -13,6 +13,12 @@
     padding-top: 64px;
     padding-bottom: 64px;
   }
+
+  .container {
+    @include vp-767 {
+      padding: 0;
+    }
+  }
 }
 
 .advantages__wrap {
@@ -22,7 +28,7 @@
   padding-left: 60px;
   padding-right: 60px;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding: 0;
   }
 }
@@ -92,7 +98,7 @@
     column-gap: 0;
     flex-direction: column;
     align-items: center;
-    padding: 0 46px;
+    padding: 0;
   }
 
   span:first-child {
@@ -180,10 +186,10 @@
 
   &--area,
   &--comfort {
-    padding-left: 15px;
+    padding-left: 20px;
 
     @include vp-1199 {
-      padding: 0 46px;
+      padding-left: 0;
     }
   }
 
@@ -295,5 +301,11 @@
         z-index: 1;
       }
     }
+  }
+}
+
+.advantages__content {
+  @include vp-767 {
+    width: 227px;
   }
 }

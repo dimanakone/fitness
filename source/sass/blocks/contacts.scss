@@ -12,12 +12,11 @@
 }
 
 .contacts__wrap {
-  padding: 54px 120px 66px;
+  padding: 54px 123px 66px;
   border-top: 1px solid $color-light-slate-grey;
 
   h2 {
-    margin: 0;
-    margin-bottom: 36px;
+    margin: 0 -3px 39px;
     font-weight: 600;
     font-family: $ff-alumni-sans;
     font-size: 54px;
@@ -29,6 +28,7 @@
     padding: 61px 133px 62px;
 
     h2 {
+      margin-left: 0;
       margin-bottom: 33px;
       font-size: 42px;
       line-height: 50px;
@@ -41,6 +41,7 @@
     h2 {
       font-size: 32px;
       line-height: 38px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -71,7 +72,6 @@
   }
 
   @include vp-1199 {
-
     dt {
       margin-bottom: 4px;
       font-size: 20px;

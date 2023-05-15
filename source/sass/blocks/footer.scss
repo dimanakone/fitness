@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 0 52px;
+    padding: 46px 0 48px;
     min-height: 260px;
   }
 }
@@ -24,20 +24,21 @@
     position: relative;
     grid-template-columns: 1fr;
     justify-content: flex-start;
-
   }
 }
 
 .footer__logo {
-  margin: 4px 25px 0 0;
+  margin: 10px 25px 0 0;
 
   cursor: default;
 
   @include vp-1199 {
-    margin: 5px 25px 0 0;
+    margin: 5px 29px 0 0;
+    width: 82px;
   }
 
   @include vp-767 {
+    width: 68px;
     position: absolute;
     top: 0;
     left: 0;
@@ -104,25 +105,25 @@
 }
 
 .footer__list {
-  display: grid;
-  grid-template-columns: repeat(5, max-content);
-  column-gap: 40px;
-  row-gap: 25px;
-
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
   list-style: none;
 
   @include vp-1199 {
-    column-gap: 30px;
+    margin-top: -2px;
+    max-width: 430px;
   }
 
   @include vp-767 {
+    max-width: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
-
+    column-gap: 30px;
+    row-gap: 13px;
 
     width: 100%;
     margin-bottom: 31px;
@@ -130,6 +131,14 @@
 }
 
 .footer__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+
+    @include vp-1199 {
+      margin-right: 30px;
+    }
+  }
+
   @include vp-767 {
     display: flex;
 

@@ -1,37 +1,36 @@
 .promo__wrap {
   display: grid;
   grid-template-columns: 1fr minmax(660px, 1fr);
-  padding-top: 120px;
+  padding-top: 52px;
   padding-bottom: 54px;
 
   @include vp-1199 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     grid-template-columns: 1fr minmax(386px, 1fr);
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    padding-top: 72px;
+    padding-top: 70px;
   }
 }
 
 .promo__content {
   background-color: $color-torchred;
-  padding: 85px 78px;
+  padding: 85px 80px 88px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   column-gap: 50px;
 
   @include vp-1199 {
-    padding: 52px 45px;
-    column-gap: 35px;
+    padding: 52px 45px 52px 43px;
+    column-gap: 30px;
   }
 
   @include vp-767 {
     padding-top: 50px;
-    column-gap: 30px;
   }
 }
 
@@ -42,7 +41,7 @@
   letter-spacing: 0.03em;
   color: $color-default-white;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   grid-column: 1/2;
   grid-row: 1/2;
   padding-left: 10px;
@@ -51,6 +50,10 @@
     font-size: 48px;
     margin-left: 0;
     margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    line-height: 98%;
   }
 }
 
@@ -62,6 +65,10 @@
 
   @include vp-1199 {
     margin-top: -4px;
+  }
+
+  @include vp-767 {
+    margin-top: -2px;
   }
 }
 
@@ -76,7 +83,7 @@
 }
 
 .promo__content dd {
-  margin: -1px 0 10px 0;
+  margin: -1px 0 8px 0;
   font-size: 40px;
   line-height: 150%;
   font-weight: 700;
@@ -117,7 +124,7 @@
   @include vp-1199 {
     font-size: 10px;
     margin-left: 4px;
-    max-width: 25px;
+    max-width: 27px;
   }
 }
 
@@ -149,7 +156,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
-  padding: 25px;
+  padding: 22px;
   grid-column: 1/-1;
   grid-row: 3/4;
   background-color: transparent;
@@ -160,17 +167,18 @@
     line-height: 12px;
     padding: 12px;
     border-width: 2px;
-    margin-right: 5px;
+    margin-right: 0;
   }
 
   @include vp-767 {
     margin-right: 0;
+    padding: 11px;
   }
 
   @include hover-focus {
     background: linear-gradient(97.05deg, $color-torchred 17.6%, $color-cobalt 95.31%);
     outline: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 0 20px rgba($color-default-black, 0.5);
     transition: 0.1s;
   }
 }

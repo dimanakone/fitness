@@ -1,27 +1,25 @@
 .subscriptions {
   position: relative;
-  padding-top: 118px;
-  padding-bottom: 240px;
+  padding-bottom: 68px;
   overflow-x: hidden;
   overflow-y: hidden;
 
   @include vp-1199 {
-    padding-top: 99px;
-    padding-bottom: 200px;
-    background-color: $color-ghost-white;
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 
   @include vp-767 {
-    padding-top: 69px;
-    padding-bottom: 140px;
+    padding-top: 55px;
+    padding-bottom: 0;
   }
 
   &::before {
     content: "";
     position: absolute;
     right: -183px;
-    bottom: -29px;
-    z-index: -1;
+    bottom: -83px;
+    z-index: 2;
     width: 470px;
     height: 494px;
 
@@ -36,8 +34,8 @@
     background-size: cover;
 
     @include vp-1199 {
-      right: -73px;
-      bottom: -225px;
+      right: -74px;
+      bottom: -75px;
       width: 420px;
       height: 444px;
     }
@@ -48,26 +46,41 @@
   }
 }
 
+.subscriptions__wrap {
+  padding-top: 122px;
+  padding-bottom: 80px;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 105px;
+    padding-bottom: 59px;
+  }
+
+  @include vp-767 {
+    padding-top: 66px;
+    padding-bottom: 35px;
+  }
+}
+
 .subscriptions h2 {
   margin: 0;
-  text-transform: uppercase;
   font-family: $ff-alumni-sans;
-  font-size: 49px;
-  line-height: 49px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 18px;
-  letter-spacing: 1.4px;
 
   @include vp-1199 {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 13px;
+    margin: 0 0 24px -15px;
   }
 
   @include vp-767 {
+    margin: 0 0 24px -10px;
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 5px;
     letter-spacing: 1.1px;
   }
 }
@@ -79,7 +92,7 @@
   @include vp-1199 {
     grid-template-columns: 1fr;
     gap: 0;
-    padding: 0 143px;
+    padding: 0 117px;
   }
 
   @include vp-767 {
