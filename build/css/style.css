@@ -4040,11 +4040,11 @@ button,
 }
 .form__wrap form {
   width: 410px;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 .form__wrap h2 {
   width: 410px;
-  margin: 0 auto 10px;
+  margin: 0 0 10px auto;
   font-size: 54px;
   font-weight: 800;
   line-height: 84px;
