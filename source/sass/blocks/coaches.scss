@@ -33,6 +33,10 @@
 .coaches__swiper {
   position: relative;
 
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    width: 1000px;
+  }
+
   &--nojs {
     overflow: visible;
   }
@@ -275,6 +279,10 @@
       left: 0;
     }
 
+    @media (min-width: 1200px) and (max-width: 1350px) {
+      left: 0;
+    }
+
     @include vp-1199 {
       left: -1px;
     }
@@ -290,6 +298,10 @@
     transform: rotate(180deg);
 
     &::after {
+      right: 0;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1350px) {
       right: 0;
     }
 

@@ -29,6 +29,10 @@ const getCoachesSlider = () => {
           spaceBetween: 30,
         },
         1200: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1350: {
           slidesPerView: 4,
           spaceBetween: 40,
         },

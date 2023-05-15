@@ -169,6 +169,10 @@
 
   &--experience {
     margin-left: 2px;
+
+    @include vp-767 {
+      margin-left: 0;
+    }
   }
 
   &--experience,
