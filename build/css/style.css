@@ -2250,8 +2250,10 @@ button,
   line-height: 30px;
   color: #102654;
   padding: 17px 24px 11px 22px;
+  border: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   cursor: pointer;
+  background: none;
 }
 .tabs__btn.active {
   color: #102654;
@@ -4022,6 +4024,13 @@ button,
 }
 
 .form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 55px 170px 54px 103px;
 }
 @media (min-width: 1200px) and (max-width: 1350px) {
@@ -4029,9 +4038,13 @@ button,
     padding-right: 100px;
   }
 }
+.form__wrap form {
+  width: 410px;
+  margin: 0 auto;
+}
 .form__wrap h2 {
-  margin: 0;
-  margin-bottom: 10px;
+  width: 410px;
+  margin: 0 auto 10px;
   font-size: 54px;
   font-weight: 800;
   line-height: 84px;
@@ -4042,8 +4055,13 @@ button,
   .form__wrap {
     padding: 61px 133px 71px;
   }
+  .form__wrap form {
+    width: auto;
+    margin: 0;
+  }
   .form__wrap h2 {
-    margin-bottom: 25px;
+    width: auto;
+    margin: 0 0 25px;
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
@@ -4054,6 +4072,7 @@ button,
     padding: 64px 15px 71px;
   }
   .form__wrap h2 {
+    width: 410px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -4371,6 +4390,9 @@ button,
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
