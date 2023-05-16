@@ -29,8 +29,7 @@
 
 .footer__logo {
   margin: 10px 25px 0 0;
-
-  cursor: default;
+  cursor: pointer;
 
   @include vp-1199 {
     margin: 5px 29px 0 0;

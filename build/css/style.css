@@ -1353,8 +1353,6 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 }
 .wrapper .header,
 .wrapper .footer {
@@ -4308,7 +4306,7 @@ button,
 
 .footer__logo {
   margin: 10px 25px 0 0;
-  cursor: default;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .footer__logo {
