@@ -1,8 +1,10 @@
 .contacts__wrapper {
+  width: 404px;
   display: flex;
   gap: 62px;
 
   @include vp-1199 {
+    width: auto;
     gap: 0;
   }
 
@@ -21,6 +23,7 @@
   }
 
   h2 {
+    width: 404px;
     margin: 0 -3px 39px;
     font-weight: 600;
     font-family: $ff-alumni-sans;
@@ -33,6 +36,7 @@
     padding: 61px 133px 62px;
 
     h2 {
+      width: auto;
       margin-left: 0;
       margin-bottom: 33px;
       font-size: 42px;
