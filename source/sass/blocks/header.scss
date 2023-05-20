@@ -17,13 +17,32 @@
   }
 }
 
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__links {
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 880px;
+
+  @include vp-1199 {
+    max-width: 530px;
+  }
+
+  @include vp-767 {
+    max-width: 180px;
+  }
+}
+
+.header__link-item {
+    margin-left: 20px;
 }
 
 .header__logo {

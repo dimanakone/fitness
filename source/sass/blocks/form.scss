@@ -68,11 +68,6 @@
     background: inherit;
     border: none;
     border-bottom: 1px solid $color-light-slate-grey;
-
-    &:hover,
-    &:focus {
-      background: rgba($color-default-black, 0.2);
-    }
   }
 
   span {

@@ -24,6 +24,11 @@
   grid-template-rows: auto auto auto;
   column-gap: 50px;
 
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    padding: 85px 70px 88px;
+    column-gap: 13px;
+  }
+
   @include vp-1199 {
     padding: 52px 45px 52px 43px;
     column-gap: 30px;
